@@ -1,387 +1,282 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <script type="text/javascript">
-            document.documentElement.className = "js";
-        </script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <title>New In ML at ICML 2025</title>
+    <script type="text/javascript">
+        document.documentElement.className = "js";
+    </script>
 
-        <link
-            rel="stylesheet"
-            id="base-css"
-            href="./css/base.css?ver=6.0.2"
-            type="text/css"
-            media="none"
-            onload="media='all'"
-        />
+    <title>New In ML at ICML 2025</title>
 
-        <script type="text/javascript">
-            let jqueryParams = [],
-                jQuery = function (r) {
-                    return (jqueryParams = [...jqueryParams, r]), jQuery;
-                },
-                $ = function (r) {
-                    return (jqueryParams = [...jqueryParams, r]), $;
-                };
-            (window.jQuery = jQuery), (window.$ = jQuery);
-            let customHeadScripts = !1;
-            (jQuery.fn = jQuery.prototype = {}),
-                ($.fn = jQuery.prototype = {}),
-                (jQuery.noConflict = function (r) {
-                    if (window.jQuery)
-                        return (
-                            (jQuery = window.jQuery), ($ = window.jQuery), (customHeadScripts = !0), jQuery.noConflict
-                        );
-                }),
-                (jQuery.ready = function (r) {
-                    jqueryParams = [...jqueryParams, r];
-                }),
-                ($.ready = function (r) {
-                    jqueryParams = [...jqueryParams, r];
-                }),
-                (jQuery.load = function (r) {
-                    jqueryParams = [...jqueryParams, r];
-                }),
-                ($.load = function (r) {
-                    jqueryParams = [...jqueryParams, r];
-                }),
-                (jQuery.fn.ready = function (r) {
-                    jqueryParams = [...jqueryParams, r];
-                }),
-                ($.fn.ready = function (r) {
-                    jqueryParams = [...jqueryParams, r];
-                });
-        </script>
+    <link rel="stylesheet" id="base-css" href="./css/base.css?ver=6.0.2" type="text/css" media="none"
+        onload="media='all'" />
 
-        <style id="wp-block-library-theme-inline-css" type="text/css"></style>
-        <style id="global-styles-inline-css" type="text/css"></style>
-        <link rel="stylesheet" id="ts_fab_css-css" href="./css/ts-fab.min.css?ver=1.5" type="text/css" media="all" />
-        <link
-            rel="stylesheet"
-            id="divi-style-css"
-            href="./css/style-static.min.css?ver=4.17.6"
-            type="text/css"
-            media="all"
-        />
-        <script type="text/javascript" src="./js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
-        <script
-            type="text/javascript"
-            src="./js/jquery/jquery-migrate.min.js?ver=3.3.2"
-            id="jquery-migrate-js"
-        ></script>
-        <script type="text/javascript" id="jquery-js-after">
-            jqueryParams.length &&
-                $.each(jqueryParams, function (e, r) {
-                    if ("function" == typeof r) {
-                        var n = String(r);
-                        n.replace("$", "jQuery");
-                        var a = new Function("return " + n)();
-                        $(document).ready(a);
-                    }
-                });
-        </script>
-        <script type="text/javascript" src="./js/ts-fab.min.js?ver=1.5" id="ts_fab_js-js"></script>
+    <script type="text/javascript">
+        let jqueryParams = [],
+            jQuery = function (r) {
+                return (jqueryParams = [...jqueryParams, r]), jQuery;
+            },
+            $ = function (r) {
+                return (jqueryParams = [...jqueryParams, r]), $;
+            };
+        (window.jQuery = jQuery), (window.$ = jQuery);
+        let customHeadScripts = !1;
+        (jQuery.fn = jQuery.prototype = {}),
+            ($.fn = jQuery.prototype = {}),
+            (jQuery.noConflict = function (r) {
+                if (window.jQuery)
+                    return (
+                        (jQuery = window.jQuery), ($ = window.jQuery), (customHeadScripts = !0), jQuery.noConflict
+                    );
+            }),
+            (jQuery.ready = function (r) {
+                jqueryParams = [...jqueryParams, r];
+            }),
+            ($.ready = function (r) {
+                jqueryParams = [...jqueryParams, r];
+            }),
+            (jQuery.load = function (r) {
+                jqueryParams = [...jqueryParams, r];
+            }),
+            ($.load = function (r) {
+                jqueryParams = [...jqueryParams, r];
+            }),
+            (jQuery.fn.ready = function (r) {
+                jqueryParams = [...jqueryParams, r];
+            }),
+            ($.fn.ready = function (r) {
+                jqueryParams = [...jqueryParams, r];
+            });
+    </script>
 
-        <link rel="shortcut icon" href="img/newinml-fav.png" />
+    <style id="wp-block-library-theme-inline-css" type="text/css"></style>
+    <style id="global-styles-inline-css" type="text/css"></style>
+    <link rel="stylesheet" id="ts_fab_css-css" href="./css/ts-fab.min.css?ver=1.5" type="text/css" media="all" />
+    <link rel="stylesheet" id="divi-style-css" href="./css/style-static.min.css?ver=4.17.6" type="text/css"
+        media="all" />
+    <script type="text/javascript" src="./js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+    <script type="text/javascript" id="jquery-js-after">
+        jqueryParams.length &&
+            $.each(jqueryParams, function (e, r) {
+                if ("function" == typeof r) {
+                    var n = String(r);
+                    n.replace("$", "jQuery");
+                    var a = new Function("return " + n)();
+                    $(document).ready(a);
+                }
+            });
+    </script>
+    <script type="text/javascript" src="./js/ts-fab.min.js?ver=1.5" id="ts_fab_js-js"></script>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="img/newinml-fav.png" />
 
-        <style>
-            .dropdown-menu {
-                width: 250px !important;
-            }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-            .dropdown-menu li a {
-                white-space: nowrap;
-            }
-        </style>
-    </head>
+    <style>
+        .dropdown-menu {
+            width: 250px !important;
+        }
 
-    <body
-        class="page-template-default page page-id-324 et_divi_builder et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_svg_logo et_pb_footer_columns4 et_cover_background et_pb_gutter linux et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db"
-    >
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-dark-grayscale">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 0.49803921568627" />
-                        <feFuncG type="table" tableValues="0 0.49803921568627" />
-                        <feFuncB type="table" tableValues="0 0.49803921568627" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-grayscale">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 1" />
-                        <feFuncG type="table" tableValues="0 1" />
-                        <feFuncB type="table" tableValues="0 1" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-purple-yellow">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
-                        <feFuncG type="table" tableValues="0 1" />
-                        <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-blue-red">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 1" />
-                        <feFuncG type="table" tableValues="0 0.27843137254902" />
-                        <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-midnight">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0 0" />
-                        <feFuncG type="table" tableValues="0 0.64705882352941" />
-                        <feFuncB type="table" tableValues="0 1" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-magenta-yellow">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.78039215686275 1" />
-                        <feFuncG type="table" tableValues="0 0.94901960784314" />
-                        <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-purple-green">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
-                        <feFuncG type="table" tableValues="0 1" />
-                        <feFuncB type="table" tableValues="0.44705882352941 0.4" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 0 0"
-            width="0"
-            height="0"
-            focusable="false"
-            role="none"
-            style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden"
-        >
-            <defs>
-                <filter id="wp-duotone-blue-orange">
-                    <feColorMatrix
-                        color-interpolation-filters="sRGB"
-                        type="matrix"
-                        values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
-                    />
-                    <feComponentTransfer color-interpolation-filters="sRGB">
-                        <feFuncR type="table" tableValues="0.098039215686275 1" />
-                        <feFuncG type="table" tableValues="0 0.66274509803922" />
-                        <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
-                        <feFuncA type="table" tableValues="1 1" />
-                    </feComponentTransfer>
-                    <feComposite in2="SourceGraphic" operator="in" />
-                </filter>
-            </defs>
-        </svg>
-        <div id="page-container">
-            <!-- ***************************************************** Workshop header ***************************************************** -->
-            <!-- ***************************************************** Workshop header ***************************************************** -->
-            <!-- ***************************************************** Workshop header ***************************************************** -->
-            <!-- ***************************************************** Workshop header ***************************************************** -->
+        .dropdown-menu li a {
+            white-space: nowrap;
+        }
+    </style>
+</head>
 
-            <header id="main-header" data-height-onload="66">
-                <div class="container clearfix et_menu_container">
-                    <div class="logo_container">
-                        <span class="logo_helper"></span>
-                        <a href="#">
-                            <img
-                                src="./img/neurips.png"
-                                width="93"
-                                height="43"
-                                alt="Decision Making"
-                                id="logo"
-                                data-height-percentage="54"
-                            />
-                        </a>
-                    </div>
-                    <div id="et-top-navigation" data-height="66" data-fixed-height="40">
-                        <nav id="top-menu-nav">
-                            <ul id="top-menu" class="nav">
-                                <!--                        <li id="menu-item-186"-->
-                                <!--                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-186">-->
-                                <!--                            <a href="#">Home</a>-->
-                                <!--                        </li>-->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Previous Workshops </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="https://nehzux.github.io/NewInML2023NeurIPS"
-                                                >NewInML at NeurIPS 2024</a
-                                            >
-                                        </li>
-                                        <li><a href="newinml2023.html">NewInML at NeurIPS 2023</a></li>
-                                        <li>
-                                            <a href="https://nehzux.github.io/NewInML2022NeurIPS/"
-                                                >NewInML at NeurIPS 2022</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="https://ablacan.github.io/NewInML2022_ICML/"
-                                                >NewInML at ICML 2022</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="https://nehzux.github.io/NewInML2019/">NewInML at NeurIPS 2019</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
+<body
+    class="page-template-default page page-id-324 et_divi_builder et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_svg_logo et_pb_footer_columns4 et_cover_background et_pb_gutter linux et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <div id="page-container">
+        <!-- ***************************************************** Workshop header ***************************************************** -->
+        <!-- ***************************************************** Workshop header ***************************************************** -->
+        <!-- ***************************************************** Workshop header ***************************************************** -->
+        <!-- ***************************************************** Workshop header ***************************************************** -->
 
-                        <!-- <div id="et_top_search">
+        <header id="main-header" data-height-onload="66">
+            <div class="container clearfix et_menu_container">
+                <div class="logo_container">
+                    <span class="logo_helper"></span>
+                    <a href="#">
+                        <img src="./img/neurips.png" width="93" height="43" alt="Decision Making" id="logo"
+                            data-height-percentage="54" />
+                    </a>
+                </div>
+                <div id="et-top-navigation" data-height="66" data-fixed-height="40">
+                    <nav id="top-menu-nav">
+                        <ul id="top-menu" class="nav">
+                            <!--                        <li id="menu-item-186"-->
+                            <!--                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-186">-->
+                            <!--                            <a href="#">Home</a>-->
+                            <!--                        </li>-->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Previous Workshops </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://nehzux.github.io/NewInML2023NeurIPS">NewInML at NeurIPS
+                                            2024</a>
+                                    </li>
+                                    <li><a href="newinml2023.html">NewInML at NeurIPS 2023</a></li>
+                                    <li>
+                                        <a href="https://nehzux.github.io/NewInML2022NeurIPS/">NewInML at NeurIPS
+                                            2022</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ablacan.github.io/NewInML2022_ICML/">NewInML at ICML 2022</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://nehzux.github.io/NewInML2019/">NewInML at NeurIPS 2019</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- <div id="et_top_search">
                 <span id="et_search_icon"></span>
             </div> -->
 
-                        <div id="et_mobile_nav_menu">
-                            <div class="mobile_nav closed">
-                                <span class="select_page">Select Page</span>
-                                <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
-                            </div>
+                    <div id="et_mobile_nav_menu">
+                        <div class="mobile_nav closed">
+                            <span class="select_page">Select Page</span>
+                            <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
                         </div>
                     </div>
-                    <!-- #et-top-navigation -->
                 </div>
-                <!-- .container -->
-                <!-- <div class="et_search_outer">
+                <!-- #et-top-navigation -->
+            </div>
+            <!-- .container -->
+            <!-- <div class="et_search_outer">
         <div class="container et_search_form_container">
             <form role="search" method="get" class="et-search-form" action="https://tripods.cis.cornell.edu/">
                 <input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s"
@@ -390,73 +285,68 @@
             <span class="et_close_search_field"></span>
         </div>
     </div> -->
-            </header>
-            <!-- #main-header -->
-            <div id="et-main-area">
-                <div id="main-content">
-                    <article id="post-324" class="post-324 page type-page status-publish hentry">
-                        <div class="entry-content">
-                            <div class="et-l et-l--post">
-                                <div class="et_builder_inner_content et_pb_gutters3">
-                                    <!-- ***************************************************** Workshop Brief ***************************************************** -->
-                                    <!-- ***************************************************** Workshop Brief ***************************************************** -->
-                                    <!-- ***************************************************** Workshop Brief ***************************************************** -->
-                                    <!-- ***************************************************** Workshop Brief ***************************************************** -->
-                                    <div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular">
-                                        <div class="et_pb_row et_pb_row_0 et_pb_equal_columns">
+        </header>
+        <!-- #main-header -->
+        <div id="et-main-area">
+            <div id="main-content">
+                <article id="post-324" class="post-324 page type-page status-publish hentry">
+                    <div class="entry-content">
+                        <div class="et-l et-l--post">
+                            <div class="et_builder_inner_content et_pb_gutters3">
+                                <!-- ***************************************************** Workshop Brief ***************************************************** -->
+                                <!-- ***************************************************** Workshop Brief ***************************************************** -->
+                                <!-- ***************************************************** Workshop Brief ***************************************************** -->
+                                <!-- ***************************************************** Workshop Brief ***************************************************** -->
+                                <div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular">
+                                    <div class="et_pb_row et_pb_row_0 et_pb_equal_columns">
+                                        <div
+                                            class="et_pb_column et_pb_column_4_4 et_pb_column_0 et_pb_css_mix_blend_mode_passthrough et-last-child">
                                             <div
-                                                class="et_pb_column et_pb_column_4_4 et_pb_column_0 et_pb_css_mix_blend_mode_passthrough et-last-child"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_0 et_animated et_pb_text_align_left et_pb_bg_layout_dark"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h1>
-                                                            <span style="font-family: inherit; font-size: xx-large"
-                                                                >New In ML at ICML 2025</span
-                                                            >
-                                                        </h1>
-                                                        <!--                                                    <h1><span-->
-                                                        <!--                                                            style="font-size: x-large; font-family: inherit; font-weight: normal;"><strong><i>“Do-->
-                                                        <!--                                                                    the right thing”: machine learning and causal-->
-                                                        <!--                                                                    inference for improved decision-->
-                                                        <!--                                                                    making</i></strong></span></h1>-->
-                                                    </div>
+                                                class="et_pb_module et_pb_text et_pb_text_0 et_animated et_pb_text_align_left et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner">
+                                                    <h1>
+                                                        <span style="font-family: inherit; font-size: xx-large">New In
+                                                            ML at ICML 2025</span>
+                                                    </h1>
+                                                    <!--                                                    <h1><span-->
+                                                    <!--                                                            style="font-size: x-large; font-family: inherit; font-weight: normal;"><strong><i>“Do-->
+                                                    <!--                                                                    the right thing”: machine learning and causal-->
+                                                    <!--                                                                    inference for improved decision-->
+                                                    <!--                                                                    making</i></strong></span></h1>-->
                                                 </div>
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_1 et_animated et_pb_text_align_left et_pb_bg_layout_dark"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <p>
-                                                            <span style="font-family: inherit; font-size: large"
-                                                                >NewInML will be held at ICML 2025 on
-                                                                <span style="color: red">TBD</span>, 2025! Location:
-                                                                <span style="color: red">TBD</span>. <br />
-                                                                We are updating the website frequently. Stay tuned! If
-                                                                you have any question, please contact us by:
-                                                                contactnewinml@gmail.com
-                                                            </span>
-                                                        </p>
-                                                    </div>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_1 et_animated et_pb_text_align_left et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner">
+                                                    <p>
+                                                        <span style="font-family: inherit; font-size: large">NewInML
+                                                            will be held at ICML 2025 on
+                                                            <span style="color: red">June 15 </span>, 2025! Location:
+                                                            <span style="color: red">Vancouver Convention Center</span>.
+                                                            <br />
+                                                            We are updating the website frequently. Stay tuned! If
+                                                            you have any question, please contact us by:
+                                                            contactnewinml@gmail.com
+                                                        </span>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <!-- ***************************************************** Workshop Summary ***************************************************** -->
-                                    <!-- ***************************************************** Workshop Summary ***************************************************** -->
-                                    <!-- ***************************************************** Workshop Summary ***************************************************** -->
-                                    <!-- ***************************************************** Workshop Summary ***************************************************** -->
-                                    <!-- ***************************************************** Workshop Summary ***************************************************** -->
-                                    <div class="et_pb_section et_pb_section_1 et_section_regular">
-                                        <div class="et_pb_row et_pb_row_1 et_pb_gutters1">
+                                <!-- ***************************************************** Workshop Summary ***************************************************** -->
+                                <!-- ***************************************************** Workshop Summary ***************************************************** -->
+                                <!-- ***************************************************** Workshop Summary ***************************************************** -->
+                                <!-- ***************************************************** Workshop Summary ***************************************************** -->
+                                <!-- ***************************************************** Workshop Summary ***************************************************** -->
+                                <div class="et_pb_section et_pb_section_1 et_section_regular">
+                                    <div class="et_pb_row et_pb_row_1 et_pb_gutters1">
+                                        <div
+                                            class="et_pb_column et_pb_column_4_4 et_pb_column_1 et_pb_css_mix_blend_mode_passthrough et-last-child">
                                             <div
-                                                class="et_pb_column et_pb_column_4_4 et_pb_column_1 et_pb_css_mix_blend_mode_passthrough et-last-child"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_left et_pb_bg_layout_light"
-                                                >
-                                                    <!-- <div class="et_pb_text_inner">
+                                                class="et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_left et_pb_bg_layout_light">
+                                                <!-- <div class="et_pb_text_inner">
                                                         <h1>
                                                             <b>Workshop <span style="color: #000000">Summary</span></b>
                                                         </h1>
@@ -465,7 +355,7 @@
                                                 <div
                                                     class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light"
                                                 > -->
-                                                    <!-- <div class="et_pb_text_inner">
+                                                <!-- <div class="et_pb_text_inner">
                                                         <p style="text-align: justify">
                                                             <span style="font-size: medium"
                                                                 >With the booming research in artificial intelligence,
@@ -478,327 +368,264 @@
                                                             >
                                                         </p>
                                                     </div> -->
-                                                    <!-- <div
+                                                <!-- <div
                                                         class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_center et_pb_space"
                                                     >
                                                         <div class="et_pb_divider_internal"></div>
                                                     </div> -->
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_left et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h1>
+                                                        <b>Our Mission </b>
+                                                    </h1>
                                                 </div>
                                                 <div
-                                                    class="et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_left et_pb_bg_layout_light"
-                                                >
+                                                    class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light">
                                                     <div class="et_pb_text_inner">
-                                                        <h1>
-                                                            <b>Our Mission </b>
-                                                        </h1>
-                                                    </div>
-                                                    <div
-                                                        class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light"
-                                                    >
-                                                        <div class="et_pb_text_inner">
-                                                            <p style="text-align: justify; font-size: medium">
-                                                                Is this your first time to a top conference? Have you
-                                                                ever wanted your own work recognized by this huge and
-                                                                active community?
-                                                            </p>
+                                                        <p style="text-align: justify; font-size: medium">
+                                                            Is this your first time to a top conference? Have you
+                                                            ever wanted your own work recognized by this huge and
+                                                            active community?
+                                                        </p>
 
-                                                            <p style="text-align: justify; font-size: medium">
-                                                                Do you encounter difficulties in polishing your ideas,
-                                                                experiments, paper writing, etc? Then, this session is
-                                                                exactly for you!
-                                                            </p>
+                                                        <p style="text-align: justify; font-size: medium">
+                                                            Do you encounter difficulties in polishing your ideas,
+                                                            experiments, paper writing, etc? Then, this session is
+                                                            exactly for you!
+                                                        </p>
 
-                                                            <p style="text-align: justify; font-size: medium">
-                                                                This year, we are hosting again the
-                                                                <strong>New in ML workshop at ICML 2025</strong>.
-                                                                This workshop is intended for anyone who has not
-                                                                published a paper at a top conference yet (e.g.
-                                                                ICML, NeurIPS). We invited top researchers to review
-                                                                your work and share their experience with you. The
-                                                                best papers will get oral presentations and awards!
-                                                            </p>
+                                                        <p style="text-align: justify; font-size: medium">
+                                                            This year, we are hosting again the
+                                                            <strong>New in ML workshop at ICML 2025</strong>.
+                                                            This workshop is intended for anyone who has not
+                                                            published a paper at a top conference yet (e.g.
+                                                            ICML, NeurIPS). We invited top researchers to review
+                                                            your work and share their experience with you. The
+                                                            best papers will get oral presentations and awards!
+                                                        </p>
 
-                                                            <p style="text-align: justify; font-size: medium">
-                                                                Our biggest goal is to help you publish papers at the
-                                                                next ICML conference, and generally provide you with the
-                                                                guidance you need to contribute to ML research fully and
-                                                                effectively!
-                                                            </p>
+                                                        <p style="text-align: justify; font-size: medium">
+                                                            Our biggest goal is to help you publish papers at the
+                                                            next ICML conference, and generally provide you with the
+                                                            guidance you need to contribute to ML research fully and
+                                                            effectively!
+                                                        </p>
 
-                                                            <p style="text-align: justify; font-size: medium">
-                                                                <strong
-                                                                    >Within quota limits, the authors of the best
-                                                                    accepted papers may be receiving tickets to ICML
-                                                                    2025,</strong
-                                                                >
-                                                                to be attributed according to merit and need.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_center et_pb_space"
-                                                >
-                                                    <div class="et_pb_divider_internal"></div>
-                                                </div>
-
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_left et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h1>
-                                                            <b
-                                                                >Submission
-                                                                <span style="color: #000000">Information</span></b
-                                                            >
-                                                        </h1>
-                                                    </div>
-                                                    <div
-                                                        class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light"
-                                                    >
-                                                        <ul style="text-align: justify; font-size: medium">
-                                                            <li>
-                                                                <strong>Submission deadline:</strong> June 10, 2025
-                                                                (AoE)
-                                                            </li>
-                                                            <li>
-                                                                <strong>Submission link:</strong>
-                                                                <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/NewInML" target="_blank">OpenReview</a>
-                                                            </li>
-                                                            <li>
-                                                                <strong>Submission format:</strong> ICML (<a
-                                                                    href="https://www.overleaf.com/latex/templates/icml2025-template/dhxrkcgkvnkt"
-                                                                    target="_blank"
-                                                                    >template</a
-                                                                >)
-                                                            </li>
-                                                            <li><strong>Review Anonymity:</strong> Double blind</li>
-                                                        </ul>
-                                                        <p style="text-align: justify">
-                                                            <span style="font-size: medium"
-                                                                >This workshop will not reject any submissions. All
-                                                                submitted papers will receive constructive comments from
-                                                                reviewers, who will provide suggestions for improvement.
-                                                                This process allows authors to become more familiar with
-                                                                the submission and review workflow.
-                                                            </span>
+                                                        <p style="text-align: justify; font-size: medium">
+                                                            <strong>Within quota limits, the authors of the best
+                                                                accepted papers may be receiving tickets to ICML
+                                                                2025,</strong>
+                                                            to be attributed according to merit and need.
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div
+                                                class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_center et_pb_space">
+                                                <div class="et_pb_divider_internal"></div>
+                                            </div>
+
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_left et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h1>
+                                                        <b>Submission
+                                                            <span style="color: #000000">Information</span></b>
+                                                    </h1>
+                                                </div>
+                                                <div
+                                                    class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light">
+                                                    <ul style="text-align: justify; font-size: medium">
+                                                        <li>
+                                                            <strong>Submission deadline:</strong> June 10, 2025
+                                                            (AoE)
+                                                        </li>
+                                                        <li>
+                                                            <strong>Submission link:</strong>
+                                                            <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/NewInML"
+                                                                target="_blank">OpenReview</a>
+                                                        </li>
+                                                        <li>
+                                                            <strong>Submission format:</strong> ICML (<a
+                                                                href="https://www.overleaf.com/latex/templates/icml2025-template/dhxrkcgkvnkt"
+                                                                target="_blank">template</a>)
+                                                        </li>
+                                                        <li><strong>Review Anonymity:</strong> Double blind</li>
+                                                    </ul>
+                                                    <p style="text-align: justify">
+                                                        <span style="font-size: medium">This workshop will not reject
+                                                            any submissions. All
+                                                            submitted papers will receive constructive comments from
+                                                            reviewers, who will provide suggestions for improvement.
+                                                            This process allows authors to become more familiar with
+                                                            the submission and review workflow.
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ***************************************************** Invited Speakers ***************************************************** -->
+                                <!-- ***************************************************** Invited Speakers ***************************************************** -->
+                                <!-- ***************************************************** Invited Speakers ***************************************************** -->
+                                <!-- ***************************************************** Invited Speakers ***************************************************** -->
+                                <!-- ***************************************************** Invited Speakers ***************************************************** -->
+
+                                <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
+                                    <div class="et_pb_row et_pb_row_2">
+                                        <div
+                                            class="et_pb_column et_pb_column_4_4 et_pb_column_2 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_4 et_pb_text_align_left et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h1><b>Invited Speakers</b></h1>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_5 et_pb_text_align_left et_pb_bg_layout_light">
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <!-- ***************************************************** Invited Speakers ***************************************************** -->
-                                    <!-- ***************************************************** Invited Speakers ***************************************************** -->
-                                    <!-- ***************************************************** Invited Speakers ***************************************************** -->
-                                    <!-- ***************************************************** Invited Speakers ***************************************************** -->
-                                    <!-- ***************************************************** Invited Speakers ***************************************************** -->
-
-                                    <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
-                                        <div class="et_pb_row et_pb_row_2">
-                                            <div
-                                                class="et_pb_column et_pb_column_4_4 et_pb_column_2 et_pb_css_mix_blend_mode_passthrough et-last-child"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_4 et_pb_text_align_left et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h1><b>Invited Speakers</b></h1>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_5 et_pb_text_align_left et_pb_bg_layout_light"
-                                                ></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="et_pb_row et_pb_row_3">
-                                            <!-- <div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <!-- <div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
                                             <div class="et_pb_text_inner">
                                                 <h3><b>To be announced soon!</b></h3>
                                             </div>
                                         </div> -->
 
-                                            <div
-                                                class="et_pb_column et_pb_column_1_5 et_pb_column_3 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint"
-                                                >
-                                                    <a href="https://sivareddy.in/" target="_blank"
-                                                        ><span class="et_pb_image_wrap has-box-shadow-overlay">
-                                                            <div class="box-shadow-overlay"></div>
-                                                            <img
-                                                                width="200"
-                                                                height="270"
-                                                                src="img/siva-reddy.jpeg"
-                                                                alt=""
-                                                                title=""
-                                                                class="wp-image-369"
-                                                                style="object-fit: cover; width: 200px; height: 220px"
-                                                            /> </span
-                                                    ></a>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3><b>Siva Reddy</b></h3>
-                                                        <p>
-                                                            <span style="font-weight: 400"
-                                                                >Assistant Professor, McGill University, School of
-                                                                Computer Science and Department of Linguistics,
-                                                                <br />Mila - Quebec AI Institute</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                        <div
+                                            class="et_pb_column et_pb_column_1_5 et_pb_column_3 et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint">
+                                                <a href="https://sivareddy.in/" target="_blank"><span
+                                                        class="et_pb_image_wrap has-box-shadow-overlay">
+                                                        <div class="box-shadow-overlay"></div>
+                                                        <img width="200" height="270" src="img/siva-reddy.jpeg" alt=""
+                                                            title="" class="wp-image-369"
+                                                            style="object-fit: cover; width: 200px; height: 220px" />
+                                                    </span></a>
                                             </div>
                                             <div
-                                                class="et_pb_column et_pb_column_1_5 et_pb_column_3 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint"
-                                                >
-                                                    <a href="https://iiis.tsinghua.edu.cn/wuyi/" target="_blank"
-                                                        ><span class="et_pb_image_wrap has-box-shadow-overlay">
-                                                            <div class="box-shadow-overlay"></div>
-                                                            <img
-                                                                width="200"
-                                                                height="270"
-                                                                src="img/yi-wu.jpg"
-                                                                alt=""
-                                                                title=""
-                                                                srcset="img/yi-wu.jpg 250w, img/yi-wu.jpg 200w"
-                                                                sizes="(max-width: 250px) 100vw, 250px"
-                                                                class="wp-image-369"
-                                                                style="object-fit: cover; width: 200px; height: 220px"
-                                                            /> </span
-                                                    ></a>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3><b>Yi Wu</b></h3>
-                                                        <p>
-                                                            <span style="font-weight: 400"
-                                                                >Assistant Professor, Tsinghua University, Institute for
-                                                                Interdisciplinary Information Sciences</span
-                                                            >
-                                                        </p>
-                                                    </div>
+                                                class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3><b>Siva Reddy</b></h3>
+                                                    <p>
+                                                        <span style="font-weight: 400">Assistant Professor, McGill
+                                                            University, School of
+                                                            Computer Science and Department of Linguistics,
+                                                            <br />Mila - Quebec AI Institute</span>
+                                                    </p>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div
+                                            class="et_pb_column et_pb_column_1_5 et_pb_column_3 et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint">
+                                                <a href="https://iiis.tsinghua.edu.cn/wuyi/" target="_blank"><span
+                                                        class="et_pb_image_wrap has-box-shadow-overlay">
+                                                        <div class="box-shadow-overlay"></div>
+                                                        <img width="200" height="270" src="img/yi-wu.jpg" alt=""
+                                                            title="" srcset="img/yi-wu.jpg 250w, img/yi-wu.jpg 200w"
+                                                            sizes="(max-width: 250px) 100vw, 250px" class="wp-image-369"
+                                                            style="object-fit: cover; width: 200px; height: 220px" />
+                                                    </span></a>
+                                            </div>
                                             <div
-                                                class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint"
-                                                >
-                                                    <a href="https://eddie.win/" target="_blank"
-                                                        ><span class="et_pb_image_wrap has-box-shadow-overlay">
-                                                            <div class="box-shadow-overlay"></div>
-                                                            <img
-                                                                width="200"
-                                                                height="270"
-                                                                src="img/eddie-zhang.jpg"
-                                                                alt=""
-                                                                title=""
-                                                                srcset="
+                                                class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3><b>Yi Wu</b></h3>
+                                                    <p>
+                                                        <span style="font-weight: 400">Assistant Professor, Tsinghua
+                                                            University, Institute for
+                                                            Interdisciplinary Information Sciences</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
+                                                <a href="https://eddie.win/" target="_blank"><span
+                                                        class="et_pb_image_wrap has-box-shadow-overlay">
+                                                        <div class="box-shadow-overlay"></div>
+                                                        <img width="200" height="270" src="img/eddie-zhang.jpg" alt=""
+                                                            title="" srcset="
                                                                     img/eddie-zhang.jpg 250w,
                                                                     img/eddie-zhang.jpg 250w
-                                                                "
-                                                                sizes="(max-width: 250px) 100vw, 250px"
-                                                                class="wp-image-369"
-                                                                style="object-fit: cover; width: 200px; height: 220px"
-                                                            /> </span
-                                                    ></a>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3><b>Edwin Zhang</b></h3>
-                                                        <p>
-                                                            <span style="font-weight: 400"
-                                                                >OpenAI, Safety Research</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                                " sizes="(max-width: 250px) 100vw, 250px"
+                                                            class="wp-image-369"
+                                                            style="object-fit: cover; width: 200px; height: 220px" />
+                                                    </span></a>
                                             </div>
                                             <div
-                                                class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint"
-                                                >
-                                                    <a href="https://www.cs.ubc.ca/~vshwartz/" target="_blank"
-                                                        ><span class="et_pb_image_wrap has-box-shadow-overlay">
-                                                            <div class="box-shadow-overlay"></div>
-                                                            <img
-                                                                width="200"
-                                                                height="270"
-                                                                src="img/vered.jpg"
-                                                                alt=""
-                                                                title=""
-                                                                srcset="img/vered.jpg 250w, img/vered.jpg 200w"
-                                                                sizes="(max-width: 250px) 100vw, 250px"
-                                                                class="wp-image-369"
-                                                                style="
+                                                class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3><b>Edwin Zhang</b></h3>
+                                                    <p>
+                                                        <span style="font-weight: 400">OpenAI, Safety Research</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
+                                                <a href="https://www.cs.ubc.ca/~vshwartz/" target="_blank"><span
+                                                        class="et_pb_image_wrap has-box-shadow-overlay">
+                                                        <div class="box-shadow-overlay"></div>
+                                                        <img width="200" height="270" src="img/vered.jpg" alt=""
+                                                            title="" srcset="img/vered.jpg 250w, img/vered.jpg 200w"
+                                                            sizes="(max-width: 250px) 100vw, 250px" class="wp-image-369"
+                                                            style="
                                                                     object-fit: cover;
                                                                     transform: translateX(-4px) scale(1.05);
                                                                     width: 200px;
                                                                     height: 220px;
-                                                                "
-                                                            /> </span
-                                                    ></a>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3><b>Vered Shwartz</b></h3>
-                                                        <p>
-                                                            <span style="font-weight: 400"
-                                                                >Assistant Professor, Computer Science, University of
-                                                                British Columbia</span
-                                                            >
-                                                        </p>
-                                                    </div>
+                                                                " />
+                                                    </span></a>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3><b>Vered Shwartz</b></h3>
+                                                    <p>
+                                                        <span style="font-weight: 400">Assistant Professor, Computer
+                                                            Science, University of
+                                                            British Columbia</span>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <!-- ***************************************************** Program Schedule ***************************************************** -->
+                                    <!-- ***************************************************** Program Schedule ***************************************************** -->
 
-                                        <div class="et_pb_section et_pb_section_3 et_animated et_section_regular">
-                                            <div class="et_pb_row et_pb_row_4">
+                                    <div class="et_pb_section et_pb_section_3 et_animated et_section_regular">
+                                        <div class="et_pb_row et_pb_row_4">
+                                            <div
+                                                class="et_pb_column et_pb_column_4_4 et_pb_column_8 et_pb_css_mix_blend_mode_passthrough et-last-child">
                                                 <div
-                                                    class="et_pb_column et_pb_column_4_4 et_pb_column_8 et_pb_css_mix_blend_mode_passthrough et-last-child"
-                                                >
-                                                    <div
-                                                        class="et_pb_module et_pb_text et_pb_text_11 et_pb_text_align_left et_pb_bg_layout_light"
-                                                    >
-                                                        <div class="et_pb_text_inner">
-                                                            <h1><b>Program Schedule</b></h1>
-                                                        </div>
+                                                    class="et_pb_module et_pb_text et_pb_text_11 et_pb_text_align_left et_pb_bg_layout_light">
+                                                    <div class="et_pb_text_inner">
+                                                        <h1><b>Program Schedule</b></h1>
                                                     </div>
-                                                    <div
-                                                        class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light"
-                                                    >
-                                                        <div class="et_pb_text_inner">
-                                                            <h3><b>To be announced soon!</b></h3>
-                                                        </div>
+                                                </div>
+                                                <div
+                                                    class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light">
+                                                    <div class="et_pb_text_inner">
+                                                        <h3><b>To be announced soon!</b></h3>
                                                     </div>
-                                                    <div
-                                                        class="et_pb_module et_pb_text et_pb_text_12 et_pb_text_align_left et_pb_bg_layout_light"
-                                                    ></div>
+                                                </div>
+                                                <div
+                                                    class="et_pb_module et_pb_text et_pb_text_12 et_pb_text_align_left et_pb_bg_layout_light">
                                                 </div>
                                             </div>
-                                            <!-- <div class="et_pb_with_border et_pb_row et_pb_row_5">
+                                        </div>
+                                        <!-- <div class="et_pb_with_border et_pb_row et_pb_row_5">
                                     <div
                                             class="et_pb_column et_pb_column_4_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
                                         <div
@@ -1141,404 +968,307 @@
 
 
                                 </div> -->
+                                    </div>
+                                </div>
+
+                                <div class="et_pb_section et_pb_section_5 et_section_regular">
+                                    <div class="et_pb_row et_pb_row_21">
+                                        <div
+                                            class="et_pb_column et_pb_column_4_4 et_pb_column_39 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_95 et_pb_text_align_left et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h1><b>Organizers</b></h1>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_divider et_pb_divider_3 et_pb_divider_position_center et_pb_space">
+                                                <div class="et_pb_divider_internal"></div>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_96 et_pb_text_align_left et_pb_bg_layout_light">
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="et_pb_row et_pb_row_22">
+                                        <!-- ***************************************************** Organizers ***************************************************** -->
+                                        <!-- ***************************************************** Organizers ***************************************************** -->
+                                        <!-- ***************************************************** Organizers ***************************************************** -->
+                                        <!-- ***************************************************** Organizers ***************************************************** -->
 
-                                    <div class="et_pb_section et_pb_section_5 et_section_regular">
-                                        <div class="et_pb_row et_pb_row_21">
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
                                             <div
-                                                class="et_pb_column et_pb_column_4_4 et_pb_column_39 et_pb_css_mix_blend_mode_passthrough et-last-child"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_95 et_pb_text_align_left et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h1><b>Organizers</b></h1>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_divider et_pb_divider_3 et_pb_divider_position_center et_pb_space"
-                                                >
-                                                    <div class="et_pb_divider_internal"></div>
-                                                </div>
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_96 et_pb_text_align_left et_pb_bg_layout_light"
-                                                ></div>
-                                            </div>
-                                        </div>
-                                        <div class="et_pb_row et_pb_row_22">
-                                            <!-- ***************************************************** Organizers ***************************************************** -->
-                                            <!-- ***************************************************** Organizers ***************************************************** -->
-                                            <!-- ***************************************************** Organizers ***************************************************** -->
-                                            <!-- ***************************************************** Organizers ***************************************************** -->
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#"><b>Tianyu Zhang</b></a></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"><b>Tianyu
+                                                                    Zhang</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
                                                                     font-weight: 400;
                                                                     font-size: medium;
                                                                     color: #7e7f93;
-                                                                "
-                                                                >Mila - Quebec AI Institute, University of
-                                                                Montreal</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Andrew Williams</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >Mila - Quebec AI Institute, University of
-                                                                Montreal</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"><b>Zhen Xu</b></a></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >University of Chicago</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"><b>Lu Li</b></a></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >University of Pennsylvania</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Edwin Zhang</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >OpenAI</span
-                                                            >
-                                                        </p>
-                                                    </div>
+                                                                ">Mila - Quebec AI Institute, University of
+                                                            Montreal</span>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="et_pb_row et_pb_row_23">
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
                                             <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Juan A. Rodriguez</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Andrew Williams</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
                                                                     font-weight: 400;
                                                                     font-size: medium;
                                                                     color: #7e7f93;
-                                                                "
-                                                                >Mila - Quebec AI Institute, École de Technologie
-                                                                Supérieure</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Suyuchen Wang</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >Mila - Quebec AI Institute, University of
-                                                                Montreal</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Felix Friedrich</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >Hessian.AI</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Perouz Taslakian</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >ServiceNow</span
-                                                            >
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Sai Rajeswar Mudumba</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
-                                                                    font-weight: 400;
-                                                                    font-size: medium;
-                                                                    color: #7e7f93;
-                                                                "
-                                                                >ServiceNow</span
-                                                            >
-                                                        </p>
-                                                    </div>
+                                                                ">Mila - Quebec AI Institute, University of
+                                                            Montreal</span>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="et_pb_row et_pb_row_24">
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
                                             <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"
-                                                                    ><b>Spandana Gella</b></a
-                                                                ></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Zhen Xu</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
                                                                     font-weight: 400;
                                                                     font-size: medium;
                                                                     color: #7e7f93;
-                                                                "
-                                                                >ServiceNow</span
-                                                            >
-                                                        </p>
-                                                    </div>
+                                                                ">University of Chicago</span>
+                                                    </p>
                                                 </div>
                                             </div>
+                                        </div>
 
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
                                             <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"><b>Irina Rish</b></a></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Lu Li</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
                                                                     font-weight: 400;
                                                                     font-size: medium;
                                                                     color: #7e7f93;
-                                                                "
-                                                                >Mila - Quebec AI Institute, University of
-                                                                Montreal</span
-                                                            >
-                                                        </p>
-                                                    </div>
+                                                                ">University of Pennsylvania</span>
+                                                    </p>
                                                 </div>
                                             </div>
+                                        </div>
 
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
                                             <div
-                                                class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough"
-                                            >
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light"
-                                                >
-                                                    <div class="et_pb_text_inner">
-                                                        <h3>
-                                                            <span style="font-size: medium"
-                                                                ><a href="#" target="_blank"><b>Jie Fu</b></a></span
-                                                            >
-                                                        </h3>
-                                                        <p>
-                                                            <span
-                                                                style="
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Edwin Zhang</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
                                                                     font-weight: 400;
                                                                     font-size: medium;
                                                                     color: #7e7f93;
-                                                                "
-                                                                >Shanghai AI Lab</span
-                                                            >
-                                                        </p>
-                                                    </div>
+                                                                ">OpenAI</span>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="et_pb_section et_pb_section_5 et_section_regular">
-                                        <!-- <div class="et_pb_row et_pb_row_21">
+                                    <div class="et_pb_row et_pb_row_23">
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Juan A. Rodriguez</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">Mila - Quebec AI Institute, École de Technologie
+                                                            Supérieure</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Suyuchen Wang</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">Mila - Quebec AI Institute, University of
+                                                            Montreal</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Felix Friedrich</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">Hessian.AI</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Perouz Taslakian</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">ServiceNow</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Sai Rajeswar Mudumba</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">ServiceNow</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="et_pb_row et_pb_row_24">
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Spandana Gella</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">ServiceNow</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Irina Rish</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">Mila - Quebec AI Institute, University of
+                                                            Montreal</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="et_pb_column et_pb_column_1_6 et_pb_column_41 et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_98 et_clickable et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>
+                                                        <span style="font-size: medium"><a href="#"
+                                                                target="_blank"><b>Jie Fu</b></a></span>
+                                                    </h3>
+                                                    <p>
+                                                        <span style="
+                                                                    font-weight: 400;
+                                                                    font-size: medium;
+                                                                    color: #7e7f93;
+                                                                ">Shanghai AI Lab</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="et_pb_section et_pb_section_5 et_section_regular">
+                                    <!-- <div class="et_pb_row et_pb_row_21">
                                             <div
                                                 class="et_pb_column et_pb_column_4_4 et_pb_column_39 et_pb_css_mix_blend_mode_passthrough et-last-child"
                                             >
@@ -1559,14 +1289,14 @@
                                                 ></div>
                                             </div>
                                         </div> -->
-                                        <!-- <div class="et_pb_row et_pb_row_22">
+                                    <!-- <div class="et_pb_row et_pb_row_22">
 
                                             <div class="et_pb_text_inner">
                                                 <img src="img/rora.png" alt="Team Rora" width="40%" />
                                             </div>
                                         </div> -->
 
-                                        <!-- <div class="et_pb_row et_pb_row_22">
+                                    <!-- <div class="et_pb_row et_pb_row_22">
                                             <div
                                                 class="et_pb_column et_pb_column_1_6 et_pb_column_40 et_pb_css_mix_blend_mode_passthrough"
                                             >
@@ -1585,7 +1315,7 @@
                                                 </div>
                                             </div> -->
 
-                                            <!-- <div
+                                    <!-- <div
                                             class="et_pb_column et_pb_column_1_6 et_pb_column_40  et_pb_css_mix_blend_mode_passthrough">
                                         <div
                                                 class="et_pb_module et_pb_text et_pb_text_97 et_clickable  et_pb_text_align_center et_pb_bg_layout_light">
@@ -1598,167 +1328,162 @@
                                             </div>
                                         </div>
                                     </div> -->
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </article>
-                </div>
-
-                <footer id="main-footer">
-                    <div id="footer-bottom">
-                        <div class="container clearfix"></div>
                     </div>
-                </footer>
             </div>
+            </article>
         </div>
 
-        <div id="global-footer-content">
-            <div id="global-footer-content-inner">
-                <script src="./js/OWC-emergency-banner.js" type="text/javascript" async></script>
+        <footer id="main-footer">
+            <div id="footer-bottom">
+                <div class="container clearfix"></div>
             </div>
-        </div>
+        </footer>
+    </div>
+    </div>
 
-        <script type="text/javascript">
-            var et_animation_data = [
-                {
-                    class: "et_pb_text_0",
-                    style: "flipTop",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "0ms",
-                    intensity: "50%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-                {
-                    class: "et_pb_text_1",
-                    style: "flipTop",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "50ms",
-                    intensity: "50%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-                {
-                    class: "et_pb_image_0",
-                    style: "zoom",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "0ms",
-                    intensity: "50%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-                {
-                    class: "et_pb_image_1",
-                    style: "zoom",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "50ms",
-                    intensity: "50%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-                {
-                    class: "et_pb_image_2",
-                    style: "zoom",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "100ms",
-                    intensity: "50%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-                {
-                    class: "et_pb_image_3",
-                    style: "zoom",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "150ms",
-                    intensity: "50%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-                {
-                    class: "et_pb_image_4",
-                    style: "zoom",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "150ms",
-                    intensity: "50%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-                {
-                    class: "et_pb_section_3",
-                    style: "zoom",
-                    repeat: "once",
-                    duration: "1000ms",
-                    delay: "0ms",
-                    intensity: "10%",
-                    starting_opacity: "0%",
-                    speed_curve: "ease-in-out",
-                },
-            ];
-        </script>
-        <link
-            rel="stylesheet"
-            id="wp-block-library-css"
-            href="./css/style.min.css?ver=6.0.2"
-            type="text/css"
-            media="none"
-            onload="media='all'"
-        />
-        <script type="text/javascript" src="./js/current-menu-item.js?ver=1.0" id="current.menu-js"></script>
-        <script type="text/javascript" id="divi-custom-script-js-extra">
-            /* <![CDATA[ */
-            var DIVI = { item_count: "%d Item", items_count: "%d Items" };
-            var et_builder_utils_params = {
-                condition: { diviTheme: true, extraTheme: false },
-                scrollLocations: ["app", "top"],
-                builderScrollLocations: { desktop: "app", tablet: "app", phone: "app" },
-                onloadScrollLocation: "app",
-                builderType: "fe",
-            };
-            var et_frontend_scripts = { builderCssContainerPrefix: "#et-boc", builderCssLayoutPrefix: "#et-boc .et-l" };
-            var et_pb_custom = {
-                ajaxurl: "https:\/\/tripods.cis.cornell.edu\/wp-admin\/admin-ajax.php",
-                images_uri: "https:\/\/tripods.cis.cornell.edu\/wp-content\/themes\/divi\/images",
-                builder_images_uri:
-                    "https:\/\/tripods.cis.cornell.edu\/wp-content\/themes\/divi\/includes\/builder\/images",
-                et_frontend_nonce: "2a09c65839",
-                subscription_failed: "Please, check the fields below to make sure you entered the correct information.",
-                et_ab_log_nonce: "d87dd1361e",
-                fill_message: "Please, fill in the following fields:",
-                contact_error_message: "Please, fix the following errors:",
-                invalid: "Invalid email",
-                captcha: "Captcha",
-                prev: "Prev",
-                previous: "Previous",
-                next: "Next",
-                wrong_captcha: "You entered the wrong number in captcha.",
-                wrong_checkbox: "Checkbox",
-                ignore_waypoints: "no",
-                is_divi_theme_used: "1",
-                widget_search_selector: ".widget_search",
-                ab_tests: [],
-                is_ab_testing_active: "",
-                page_id: "324",
-                unique_test_id: "",
-                ab_bounce_rate: "5",
-                is_cache_plugin_active: "yes",
-                is_shortcode_tracking: "",
-                tinymce_uri:
-                    "https:\/\/tripods.cis.cornell.edu\/wp-content\/themes\/divi\/includes\/builder\/frontend-builder\/assets\/vendors",
-                waypoints_options: [],
-            };
-            var et_pb_box_shadow_elements = [];
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="./js/scripts.min.js?ver=4.17.6" id="divi-custom-script-js"></script>
-        <script type="text/javascript" src="./js/common.js?ver=4.17.6" id="et-core-common-js"></script>
-    </body>
+    <div id="global-footer-content">
+        <div id="global-footer-content-inner">
+            <script src="./js/OWC-emergency-banner.js" type="text/javascript" async></script>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var et_animation_data = [
+            {
+                class: "et_pb_text_0",
+                style: "flipTop",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "0ms",
+                intensity: "50%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+            {
+                class: "et_pb_text_1",
+                style: "flipTop",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "50ms",
+                intensity: "50%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+            {
+                class: "et_pb_image_0",
+                style: "zoom",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "0ms",
+                intensity: "50%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+            {
+                class: "et_pb_image_1",
+                style: "zoom",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "50ms",
+                intensity: "50%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+            {
+                class: "et_pb_image_2",
+                style: "zoom",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "100ms",
+                intensity: "50%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+            {
+                class: "et_pb_image_3",
+                style: "zoom",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "150ms",
+                intensity: "50%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+            {
+                class: "et_pb_image_4",
+                style: "zoom",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "150ms",
+                intensity: "50%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+            {
+                class: "et_pb_section_3",
+                style: "zoom",
+                repeat: "once",
+                duration: "1000ms",
+                delay: "0ms",
+                intensity: "10%",
+                starting_opacity: "0%",
+                speed_curve: "ease-in-out",
+            },
+        ];
+    </script>
+    <link rel="stylesheet" id="wp-block-library-css" href="./css/style.min.css?ver=6.0.2" type="text/css" media="none"
+        onload="media='all'" />
+    <script type="text/javascript" src="./js/current-menu-item.js?ver=1.0" id="current.menu-js"></script>
+    <script type="text/javascript" id="divi-custom-script-js-extra">
+        /* <![CDATA[ */
+        var DIVI = { item_count: "%d Item", items_count: "%d Items" };
+        var et_builder_utils_params = {
+            condition: { diviTheme: true, extraTheme: false },
+            scrollLocations: ["app", "top"],
+            builderScrollLocations: { desktop: "app", tablet: "app", phone: "app" },
+            onloadScrollLocation: "app",
+            builderType: "fe",
+        };
+        var et_frontend_scripts = { builderCssContainerPrefix: "#et-boc", builderCssLayoutPrefix: "#et-boc .et-l" };
+        var et_pb_custom = {
+            ajaxurl: "https:\/\/tripods.cis.cornell.edu\/wp-admin\/admin-ajax.php",
+            images_uri: "https:\/\/tripods.cis.cornell.edu\/wp-content\/themes\/divi\/images",
+            builder_images_uri:
+                "https:\/\/tripods.cis.cornell.edu\/wp-content\/themes\/divi\/includes\/builder\/images",
+            et_frontend_nonce: "2a09c65839",
+            subscription_failed: "Please, check the fields below to make sure you entered the correct information.",
+            et_ab_log_nonce: "d87dd1361e",
+            fill_message: "Please, fill in the following fields:",
+            contact_error_message: "Please, fix the following errors:",
+            invalid: "Invalid email",
+            captcha: "Captcha",
+            prev: "Prev",
+            previous: "Previous",
+            next: "Next",
+            wrong_captcha: "You entered the wrong number in captcha.",
+            wrong_checkbox: "Checkbox",
+            ignore_waypoints: "no",
+            is_divi_theme_used: "1",
+            widget_search_selector: ".widget_search",
+            ab_tests: [],
+            is_ab_testing_active: "",
+            page_id: "324",
+            unique_test_id: "",
+            ab_bounce_rate: "5",
+            is_cache_plugin_active: "yes",
+            is_shortcode_tracking: "",
+            tinymce_uri:
+                "https:\/\/tripods.cis.cornell.edu\/wp-content\/themes\/divi\/includes\/builder\/frontend-builder\/assets\/vendors",
+            waypoints_options: [],
+        };
+        var et_pb_box_shadow_elements = [];
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="./js/scripts.min.js?ver=4.17.6" id="divi-custom-script-js"></script>
+    <script type="text/javascript" src="./js/common.js?ver=4.17.6" id="et-core-common-js"></script>
+</body>
+
 </html>
