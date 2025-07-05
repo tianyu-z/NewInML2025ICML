@@ -221,6 +221,34 @@
             padding-top: 20px !important;
             padding-bottom: 20px !important;
         }
+
+        /* Abstract toggle styles */
+        .abstract-toggle {
+            cursor: pointer;
+            color: #007bff;
+            font-weight: 500;
+            margin-top: 8px;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .abstract-toggle:hover {
+            color: #0056b3;
+        }
+
+        .abstract-toggle .arrow {
+            margin-right: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .abstract-toggle.expanded .arrow {
+            transform: rotate(90deg);
+        }
+
+        .abstract-content {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -720,12 +748,7 @@
                                     </div>
 
                                     <div class="et_pb_row et_pb_row_3">
-                                        <!-- <div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
-                                            <div class="et_pb_text_inner">
-                                                <h3><b>To be announced soon!</b></h3>
-                                            </div>
-                                        </div> -->
-
+                                        <!-- Siva Reddy - 1st -->
                                         <div
                                             class="et_pb_column et_pb_column_1_5 et_pb_column_3 et_pb_css_mix_blend_mode_passthrough">
                                             <div class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint">
@@ -750,55 +773,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="et_pb_column et_pb_column_1_5 et_pb_column_3 et_pb_css_mix_blend_mode_passthrough">
-                                            <div class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint">
-                                                <a href="https://iiis.tsinghua.edu.cn/wuyi/" target="_blank"><span
-                                                        class="et_pb_image_wrap has-box-shadow-overlay">
-                                                        <div class="box-shadow-overlay"></div>
-                                                        <img width="200" height="270" src="img/yi-wu.jpg" alt=""
-                                                            title="" srcset="img/yi-wu.jpg 250w, img/yi-wu.jpg 200w"
-                                                            sizes="(max-width: 250px) 100vw, 250px" class="wp-image-369"
-                                                            style="object-fit: cover; width: 200px; height: 220px" />
-                                                    </span></a>
-                                            </div>
-                                            <div
-                                                class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light">
-                                                <div class="et_pb_text_inner">
-                                                    <h3><b>Yi Wu</b></h3>
-                                                    <p>
-                                                        <span style="font-weight: 400">Assistant Professor, Tsinghua
-                                                            University, Institute for
-                                                            Interdisciplinary Information Sciences</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
-                                            <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
-                                                <a href="https://eddie.win/" target="_blank"><span
-                                                        class="et_pb_image_wrap has-box-shadow-overlay">
-                                                        <div class="box-shadow-overlay"></div>
-                                                        <img width="200" height="270" src="img/eddie-zhang.jpg" alt=""
-                                                            title="" srcset="
-                                                                    img/eddie-zhang.jpg 250w,
-                                                                    img/eddie-zhang.jpg 250w
-                                                                " sizes="(max-width: 250px) 100vw, 250px"
-                                                            class="wp-image-369"
-                                                            style="object-fit: cover; width: 200px; height: 220px" />
-                                                    </span></a>
-                                            </div>
-                                            <div
-                                                class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_center et_pb_bg_layout_light">
-                                                <div class="et_pb_text_inner">
-                                                    <h3><b>Edwin Zhang</b></h3>
-                                                    <p>
-                                                        <span style="font-weight: 400">OpenAI, Safety Research</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                                        <!-- Vered Shwartz - 2nd -->
                                         <div
                                             class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
                                             <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
@@ -824,6 +800,82 @@
                                                         <span style="font-weight: 400">Assistant Professor, Computer
                                                             Science, University of
                                                             British Columbia</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Yi Wu - 3rd -->
+                                        <div
+                                            class="et_pb_column et_pb_column_1_5 et_pb_column_3 et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_image et_pb_image_0 et_animated et-waypoint">
+                                                <a href="https://iiis.tsinghua.edu.cn/wuyi/" target="_blank"><span
+                                                        class="et_pb_image_wrap has-box-shadow-overlay">
+                                                        <div class="box-shadow-overlay"></div>
+                                                        <img width="200" height="270" src="img/yi-wu.jpg" alt=""
+                                                            title="" srcset="img/yi-wu.jpg 250w, img/yi-wu.jpg 200w"
+                                                            sizes="(max-width: 250px) 100vw, 250px" class="wp-image-369"
+                                                            style="object-fit: cover; width: 200px; height: 220px" />
+                                                    </span></a>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_6 et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3><b>Yi Wu</b></h3>
+                                                    <p>
+                                                        <span style="font-weight: 400">Assistant Professor, Tsinghua
+                                                            University, Institute for
+                                                            Interdisciplinary Information Sciences</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Edwin Zhang - 4th -->
+                                        <div
+                                            class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
+                                                <a href="https://eddie.win/" target="_blank"><span
+                                                        class="et_pb_image_wrap has-box-shadow-overlay">
+                                                        <div class="box-shadow-overlay"></div>
+                                                        <img width="200" height="270" src="img/eddie-zhang.jpg" alt=""
+                                                            title="" srcset="
+                                                                    img/eddie-zhang.jpg 250w,
+                                                                    img/eddie-zhang.jpg 250w
+                                                                " sizes="(max-width: 250px) 100vw, 250px"
+                                                            class="wp-image-369"
+                                                            style="object-fit: cover; width: 200px; height: 220px" />
+                                                    </span></a>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3><b>Edwin Zhang</b></h3>
+                                                    <p>
+                                                        <span style="font-weight: 400">OpenAI, Safety Research</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Chhavi Yadav - 5th -->
+                                        <div
+                                            class="et_pb_column et_pb_column_1_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
+                                                <span class="et_pb_image_wrap has-box-shadow-overlay">
+                                                    <div class="box-shadow-overlay"></div>
+                                                    <img width="200" height="270" src="img/chhavi-yadav.jpg" alt=""
+                                                        title="" class="wp-image-369"
+                                                        style="object-fit: cover; width: 200px; height: 220px" />
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3><b>Chhavi Yadav</b></h3>
+                                                    <p>
+                                                        <span style="font-weight: 400">PhD in AI from Computer Science &
+                                                            Engineering Department, UC San Diego</span>
                                                     </p>
                                                 </div>
                                             </div>
@@ -896,6 +948,47 @@
                                                             <em>Presenter: Xudong Liu</em> (15 mins presentation and
                                                             10 mins QA)
                                                         </p>
+                                                        <div class="abstract-toggle"
+                                                            onclick="toggleAbstract('s2edit-abstract')">
+                                                            <span class="arrow">▶</span> <span class="toggle-text">Show
+                                                                Abstract</span>
+                                                        </div>
+                                                        <div id="s2edit-abstract" class="abstract-content"
+                                                            style="display: none;">
+                                                            <p
+                                                                style="margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+                                                                <em>Recent advances in diffusion models have enabled
+                                                                    high-quality generation and manipulation of images
+                                                                    guided by texts, as well as concept learning from
+                                                                    images. However, naive applications of existing
+                                                                    methods to editing tasks that require fine-grained
+                                                                    control, <em>e.g.</em>, face editing, often lead to
+                                                                    suboptimal solutions with identity information and
+                                                                    high-frequency details lost during the editing
+                                                                    process, or irrelevant image regions altered due to
+                                                                    entangled concepts. In this work, we propose S²Edit,
+                                                                    a novel method based on a pre-trained text-to-image
+                                                                    diffusion model that enables personalized editing
+                                                                    with precise semantic and spatial control. We first
+                                                                    fine-tune our model to embed the identity
+                                                                    information into a learnable text token. During
+                                                                    fine-tuning, we disentangle the learned identity
+                                                                    token from attributes to be edited by enforcing an
+                                                                    orthogonality constraint in the textual feature
+                                                                    space. To ensure that the identity token only
+                                                                    affects regions of interest, we apply object masks
+                                                                    to guide the cross-attention maps. At inference
+                                                                    time, our method performs localized editing while
+                                                                    faithfully preserving the original identity with
+                                                                    semantically disentangled and spatially focused
+                                                                    identity token learned. Extensive experiments
+                                                                    demonstrate the superiority of S²Edit over
+                                                                    state-of-the-art methods both quantitatively and
+                                                                    qualitatively. Additionally, we showcase several
+                                                                    compositional image editing applications of S²Edit
+                                                                    such as makeup transfer.</em>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="et_pb_with_border et_pb_row">
@@ -909,6 +1002,24 @@
                                                             <em>Given by Vered Shwartz</em> (40 mins presentation
                                                             and 5 min QA)
                                                         </p>
+                                                        <div class="abstract-toggle"
+                                                            onclick="toggleAbstract('vered-abstract')">
+                                                            <span class="arrow">▶</span> <span class="toggle-text">Show
+                                                                Abstract</span>
+                                                        </div>
+                                                        <div id="vered-abstract" class="abstract-content"
+                                                            style="display: none;">
+                                                            <p
+                                                                style="margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+                                                                <em>Getting into ML research these days can be exciting
+                                                                    but also overwhelming. In this talk, I will start by
+                                                                    sharing my own journey as an NLP researcher in a
+                                                                    decade full of "did my problem just get solved?"
+                                                                    crises. I will then share my perspective on choosing
+                                                                    meaningful research problems and general tips for
+                                                                    grad students navigating ML research.</em>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="et_pb_with_border et_pb_row">
@@ -934,6 +1045,47 @@
                                                             presentation and
                                                             10 mins QA)
                                                         </p>
+                                                        <div class="abstract-toggle"
+                                                            onclick="toggleAbstract('lantern-abstract')">
+                                                            <span class="arrow">▶</span> <span class="toggle-text">Show
+                                                                Abstract</span>
+                                                        </div>
+                                                        <div id="lantern-abstract" class="abstract-content"
+                                                            style="display: none;">
+                                                            <p
+                                                                style="margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+                                                                <em>Modeling user behavior is critical across many
+                                                                    industries where understanding preferences, intent,
+                                                                    or decisions informs personalization, targeting, and
+                                                                    strategic outcomes. Surveys have long served as a
+                                                                    classical mechanism for collecting such behavioral
+                                                                    data due to their interpretability, structure, and
+                                                                    ease of deployment. However, surveys alone are
+                                                                    inherently limited by user fatigue, incomplete
+                                                                    responses, and practical constraints on their length
+                                                                    making them insufficient for capturing user
+                                                                    behavior. In this work, we present LANTERN
+                                                                    (Late-Attentive Network for Enriched Response
+                                                                    Modeling), a modular architecture for modeling user
+                                                                    behavior by fusing adaptive survey responses with
+                                                                    supplemental contextual signals. We demonstrate the
+                                                                    architectural value of maintaining survey primacy
+                                                                    through selective gating, residual connections and
+                                                                    late fusion via cross-attention, treating survey
+                                                                    data as the primary signal while incorporating
+                                                                    external modalities only when relevant. LANTERN
+                                                                    outperforms strong survey-only baselines in
+                                                                    multi-label prediction of survey responses. We
+                                                                    further investigate threshold sensitivity and the
+                                                                    benefits of selective modality reliance through
+                                                                    ablation and rare/frequent attribute analysis.
+                                                                    LANTERN is currently deployed in production, where
+                                                                    its modularity supports scalable integration of new
+                                                                    encoders and evolving datasets. This work provides a
+                                                                    practical and extensible blueprint for behavior
+                                                                    modeling in survey-centric applications.</em>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="et_pb_with_border et_pb_row">
@@ -966,6 +1118,32 @@
                                                             <em>Given by Yi Wu</em> (40 mins presentation and 5 min
                                                             QA)
                                                         </p>
+                                                        <div class="abstract-toggle"
+                                                            onclick="toggleAbstract('yi-abstract')">
+                                                            <span class="arrow">▶</span> <span class="toggle-text">Show
+                                                                Abstract</span>
+                                                        </div>
+                                                        <div id="yi-abstract" class="abstract-content"
+                                                            style="display: none;">
+                                                            <p
+                                                                style="margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+                                                                <em>Reinforcement Learning (RL) has become a new engine
+                                                                    for recent AI breakthroughs, from RLHF and Reasoning
+                                                                    Training to Agentic Models. In this talk, we will
+                                                                    cover the basics of RL training for LLMs and share
+                                                                    our experiences on developing our large-scale RL
+                                                                    system AReaL, for LLMs. AReaL is a fully
+                                                                    asynchronous training system for LLMs and agents.
+                                                                    The AReaL project releases a collection of
+                                                                    reproducible recipes for building SOTA LLM
+                                                                    applications, including all the training data, model
+                                                                    and scripts. We hope AReaL can help researchers
+                                                                    build their own LLM models and agents easily. Our
+                                                                    projects can be found at <a
+                                                                        href="https://github.com/inclusionAI/AReaL"
+                                                                        target="_blank">https://github.com/inclusionAI/AReaL</a>.</em>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="et_pb_with_border et_pb_row">
@@ -1001,6 +1179,34 @@
                                                             <em>Given by Eddie Zhang</em> (40 mins presentation and
                                                             5 min QA)
                                                         </p>
+                                                        <div class="abstract-toggle"
+                                                            onclick="toggleAbstract('eddie-abstract')">
+                                                            <span class="arrow">▶</span> <span class="toggle-text">Show
+                                                                Abstract</span>
+                                                        </div>
+                                                        <div id="eddie-abstract" class="abstract-content"
+                                                            style="display: none;">
+                                                            <p
+                                                                style="margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+                                                                <em>As the development of artificial general
+                                                                    intelligence (AGI) accelerates, questions of
+                                                                    societal impact are becoming increasingly urgent.
+                                                                    This talk explores how AGI could interface with
+                                                                    human governance structures, democratic
+                                                                    institutions, and pluralistic values. I'll outline
+                                                                    key risks posed by AGI concentration—such as
+                                                                    misalignment, surveillance, and political
+                                                                    capture—and explore frameworks for ensuring AGI
+                                                                    benefits are distributed justly. Drawing on lessons
+                                                                    from political philosophy and social choice theory,
+                                                                    I'll propose a vision of AGI as both a tool of
+                                                                    public infrastructure and a mechanism for holding
+                                                                    institutions accountable. The talk calls for machine
+                                                                    learning researchers to engage with political
+                                                                    legitimacy and the design of global participatory
+                                                                    systems.</em>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="et_pb_with_border et_pb_row">
@@ -1025,6 +1231,41 @@
                                                                 Layers"</strong><br>
                                                             <em>Presenter: Luis Pinto</em> (15 mins presentation and
                                                             10 mins QA)
+                                                        </p>
+                                                        <div class="abstract-toggle"
+                                                            onclick="toggleAbstract('chemical-abstract')">
+                                                            <span class="arrow">▶</span> <span class="toggle-text">Show
+                                                                Abstract</span>
+                                                        </div>
+                                                        <div id="chemical-abstract" class="abstract-content"
+                                                            style="display: none;">
+                                                            <p
+                                                                style="margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+                                                                <em>Pretrained molecular encoders have become
+                                                                    indispensable in computational chemistry for tasks
+                                                                    such as property prediction and molecular
+                                                                    generation. However, the standard practice of
+                                                                    relying solely on final-layer embeddings for
+                                                                    downstream tasks may discard valuable information.
+                                                                    In this work, we challenge this convention by
+                                                                    conducting a comprehensive layer-wise analysis of
+                                                                    five diverse molecular encoders across 22 ADMET
+                                                                    property prediction tasks. Our results demonstrate
+                                                                    that embeddings from intermediate layers
+                                                                    consistently outperform final-layer representations:
+                                                                    Using fixed embeddings from the optimal intermediate
+                                                                    layers improved downstream performance by an average
+                                                                    of 5.4%, reaching gains up to 28.6%; finetuning up
+                                                                    to these intermediate layers yielded even greater
+                                                                    average improvements of 8.5%, with performance
+                                                                    increases as high as 40.8%, achieving new
+                                                                    state-of-the-art results on several benchmarks.
+                                                                    These findings highlight the importance of exploring
+                                                                    the full representational depth of molecular
+                                                                    encoders to achieve substantial performance
+                                                                    improvements and computational efficiency.</em>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="et_pb_with_border et_pb_row">
@@ -1040,6 +1281,44 @@
                                                             <em>Presenter: Parsa Rahimi</em> (15 mins presentation
                                                             and
                                                             10 mins QA)
+                                                        </p>
+                                                        <div class="abstract-toggle"
+                                                            onclick="toggleAbstract('scoremix-abstract')">
+                                                            <span class="arrow">▶</span> <span class="toggle-text">Show
+                                                                Abstract</span>
+                                                        </div>
+                                                        <div id="scoremix-abstract" class="abstract-content"
+                                                            style="display: none;">
+                                                            <p
+                                                                style="margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+                                                                <em>In this paper, we propose ScoreMix, a novel yet
+                                                                    simple data augmentation strategy leveraging the
+                                                                    score compositional properties of diffusion models
+                                                                    to enhance discriminator performance, particularly
+                                                                    under scenarios with limited labeled data. By
+                                                                    convexly mixing the scores from different
+                                                                    class-conditioned trajectories during diffusion
+                                                                    sampling, we generate challenging synthetic samples
+                                                                    that significantly improve discriminative
+                                                                    capabilities in all studied benchmarks. We
+                                                                    systematically investigate class-selection
+                                                                    strategies for mixing and discover that greater
+                                                                    performance gains arise when combining classes
+                                                                    distant in the discriminator's embedding space,
+                                                                    rather than close in the generator's condition
+                                                                    space. Moreover, we empirically show that, under
+                                                                    standard metrics, the correlation between the
+                                                                    generator's learned condition space and the
+                                                                    discriminator's embedding space is minimal. Our
+                                                                    approach achieves notable performance improvements
+                                                                    without extensive parameter searches, demonstrating
+                                                                    practical advantages for training discriminative
+                                                                    models while effectively mitigating problems
+                                                                    regarding collections of large datasets. The source
+                                                                    code and the synthetic dataset will be publicly
+                                                                    available when published.</em>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="et_pb_with_border et_pb_row"
@@ -1917,6 +2196,25 @@
     </script>
     <script type="text/javascript" src="./js/scripts.min.js?ver=4.17.6" id="divi-custom-script-js"></script>
     <script type="text/javascript" src="./js/common.js?ver=4.17.6" id="et-core-common-js"></script>
+
+    <script type="text/javascript">
+        function toggleAbstract(abstractId) {
+            const abstractContent = document.getElementById(abstractId);
+            const toggleElement = abstractContent.previousElementSibling;
+            const arrow = toggleElement.querySelector('.arrow');
+            const toggleText = toggleElement.querySelector('.toggle-text');
+
+            if (abstractContent.style.display === 'none') {
+                abstractContent.style.display = 'block';
+                toggleElement.classList.add('expanded');
+                toggleText.textContent = 'Hide Abstract';
+            } else {
+                abstractContent.style.display = 'none';
+                toggleElement.classList.remove('expanded');
+                toggleText.textContent = 'Show Abstract';
+            }
+        }
+    </script>
 </body>
 
 </html>
